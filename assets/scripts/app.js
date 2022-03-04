@@ -14,22 +14,22 @@ multiplyBtn.addEventListener('click', multiplyNumber)
 divideBtn.addEventListener('click', divideNumber)
 
 function addNumber() {
-  currentResult = currentResult + parseInt(userInput.value)
+  currentResult += +userInput.value
   outputResult()
 }
 
 function substractNumber() {
-  currentResult = currentResult - parseInt(userInput.value)
+  currentResult -= +userInput.value
   outputResult()
 }
 
 function multiplyNumber() {
-  currentResult = currentResult * parseInt(userInput.value)
+  currentResult *= +userInput.value
   outputResult()
 }
 
 function divideNumber() {
-  currentResult = currentResult / parseInt(userInput.value)
+  currentResult /= +userInput.value
   outputResult()
 }
 
